@@ -1,0 +1,303 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C1450CF51897103E00A42D97 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C1450CF41897103E00A42D97 /* CoreFoundation.framework */; };
+		C1450D011897103E00A42D97 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = C1450D001897103E00A42D97 /* main.c */; };
+		C1450D081897134E00A42D97 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C1450D071897134E00A42D97 /* AudioToolbox.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		C1450CF11897103E00A42D97 /* vibrate */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = vibrate; sourceTree = BUILT_PRODUCTS_DIR; };
+		C1450CF41897103E00A42D97 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
+		C1450CF91897103E00A42D97 /* control.txt */ = {isa = PBXFileReference; lastKnownFileType = text; name = control.txt; path = Package/DEBIAN/control.txt; sourceTree = "<group>"; };
+		C1450CFA1897103E00A42D97 /* control */ = {isa = PBXFileReference; lastKnownFileType = text; name = control; path = Package/DEBIAN/control; sourceTree = "<group>"; };
+		C1450CFC1897103E00A42D97 /* PackageVersion.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = PackageVersion.plist; sourceTree = "<group>"; };
+		C1450D001897103E00A42D97 /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
+		C1450D071897134E00A42D97 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C1450CEE1897103E00A42D97 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C1450D081897134E00A42D97 /* AudioToolbox.framework in Frameworks */,
+				C1450CF51897103E00A42D97 /* CoreFoundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C1450CE81897103E00A42D97 = {
+			isa = PBXGroup;
+			children = (
+				C1450CF61897103E00A42D97 /* vibrate */,
+				C1450CF31897103E00A42D97 /* Frameworks */,
+				C1450CF21897103E00A42D97 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C1450CF21897103E00A42D97 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C1450CF11897103E00A42D97 /* vibrate */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C1450CF31897103E00A42D97 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C1450D071897134E00A42D97 /* AudioToolbox.framework */,
+				C1450CF41897103E00A42D97 /* CoreFoundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C1450CF61897103E00A42D97 /* vibrate */ = {
+			isa = PBXGroup;
+			children = (
+				C1450D001897103E00A42D97 /* main.c */,
+				C1450CF71897103E00A42D97 /* Package */,
+				C1450CFB1897103E00A42D97 /* Supporting Files */,
+			);
+			path = vibrate;
+			sourceTree = "<group>";
+		};
+		C1450CF71897103E00A42D97 /* Package */ = {
+			isa = PBXGroup;
+			children = (
+				C1450CF81897103E00A42D97 /* DEBIAN */,
+				C1450CFD1897103E00A42D97 /* usr */,
+			);
+			name = Package;
+			sourceTree = "<group>";
+		};
+		C1450CF81897103E00A42D97 /* DEBIAN */ = {
+			isa = PBXGroup;
+			children = (
+				C1450CF91897103E00A42D97 /* control.txt */,
+				C1450CFA1897103E00A42D97 /* control */,
+			);
+			name = DEBIAN;
+			sourceTree = "<group>";
+		};
+		C1450CFB1897103E00A42D97 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C1450CFC1897103E00A42D97 /* PackageVersion.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C1450CFD1897103E00A42D97 /* usr */ = {
+			isa = PBXGroup;
+			children = (
+				C1450CFE1897103E00A42D97 /* bin */,
+			);
+			name = usr;
+			sourceTree = "<group>";
+		};
+		C1450CFE1897103E00A42D97 /* bin */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = bin;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C1450CF01897103E00A42D97 /* vibrate */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C1450D041897103E00A42D97 /* Build configuration list for PBXNativeTarget "vibrate" */;
+			buildPhases = (
+				C1450CED1897103E00A42D97 /* Sources */,
+				C1450CEE1897103E00A42D97 /* Frameworks */,
+				C1450CEF1897103E00A42D97 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = vibrate;
+			productName = vibrate;
+			productReference = C1450CF11897103E00A42D97 /* vibrate */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C1450CE91897103E00A42D97 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0500;
+			};
+			buildConfigurationList = C1450CEC1897103E00A42D97 /* Build configuration list for PBXProject "vibrate" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = C1450CE81897103E00A42D97;
+			productRefGroup = C1450CF21897103E00A42D97 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C1450CF01897103E00A42D97 /* vibrate */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		C1450CEF1897103E00A42D97 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/opt/iOSOpenDev/bin/iosod --xcbp";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C1450CED1897103E00A42D97 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C1450D011897103E00A42D97 /* main.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		C1450D021897103E00A42D97 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_ENABLE_MODULES = YES;
+				COPY_PHASE_STRIP = NO;
+				EXCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES = "*.nib *.lproj *.gch (*) .DS_Store CVS .svn .git .hg *.xcodeproj *.xcode *.pbproj *.pbxproj";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(iOSOpenDevPath)/frameworks/**",
+					"$(SDKROOT)/System/Library/PrivateFrameworks",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "$(iOSOpenDevPath)/include/**";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				LIBRARY_SEARCH_PATHS = "$(iOSOpenDevPath)/lib/**";
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = NO;
+				iOSOpenDevPath = /opt/iOSOpenDev;
+			};
+			name = Debug;
+		};
+		C1450D031897103E00A42D97 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_ENABLE_MODULES = YES;
+				COPY_PHASE_STRIP = YES;
+				EXCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES = "*.nib *.lproj *.gch (*) .DS_Store CVS .svn .git .hg *.xcodeproj *.xcode *.pbproj *.pbxproj";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(iOSOpenDevPath)/frameworks/**",
+					"$(SDKROOT)/System/Library/PrivateFrameworks",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "$(iOSOpenDevPath)/include/**";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				LIBRARY_SEARCH_PATHS = "$(iOSOpenDevPath)/lib/**";
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				iOSOpenDevPath = /opt/iOSOpenDev;
+			};
+			name = Release;
+		};
+		C1450D051897103E00A42D97 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				INSTALL_PATH = /usr/bin;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				iOSOpenDevBuildPackageOnAnyBuild = NO;
+				iOSOpenDevCopyOnBuild = NO;
+				iOSOpenDevDevice = "";
+				iOSOpenDevInstallOnAnyBuild = NO;
+				iOSOpenDevInstallOnProfiling = YES;
+				iOSOpenDevRespringOnInstall = YES;
+				iOSOpenDevUsePackageVersionPList = YES;
+			};
+			name = Debug;
+		};
+		C1450D061897103E00A42D97 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				INSTALL_PATH = /usr/bin;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				iOSOpenDevBuildPackageOnAnyBuild = NO;
+				iOSOpenDevCopyOnBuild = NO;
+				iOSOpenDevDevice = "";
+				iOSOpenDevInstallOnAnyBuild = NO;
+				iOSOpenDevInstallOnProfiling = YES;
+				iOSOpenDevRespringOnInstall = YES;
+				iOSOpenDevUsePackageVersionPList = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C1450CEC1897103E00A42D97 /* Build configuration list for PBXProject "vibrate" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C1450D021897103E00A42D97 /* Debug */,
+				C1450D031897103E00A42D97 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C1450D041897103E00A42D97 /* Build configuration list for PBXNativeTarget "vibrate" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C1450D051897103E00A42D97 /* Debug */,
+				C1450D061897103E00A42D97 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C1450CE91897103E00A42D97 /* Project object */;
+}
