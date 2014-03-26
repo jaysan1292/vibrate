@@ -24,5 +24,17 @@ Icon
 
 LatestBuild
 
-Packages/*
-*/Package/*
+_/*
+.DS_Store
+*/.DS_Store
+theos
+*/theos
+Build
+*/Build
+Packages
+*/Packages
+.deb
+*/.deb
+.theos
+*/.theos
+

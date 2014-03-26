@@ -1,5 +1,5 @@
-#include <CoreFoundation/CoreFoundation.h>
-#include <AudioToolbox/AudioToolbox.h>
+#import <CoreFoundation/CoreFoundation.h>
+#import <AudioToolbox/AudioToolbox.h>
 
 #define kDefaultVibrateCount 1
 #define kDefaultVibrateDelay 500
@@ -11,7 +11,7 @@ void usage() {
     printf("  -?           Print this help.\n");
 }
 
-int main (int argc, const char * argv[]) {
+int main (int argc, char** argv) {
     // command argument stuff
     int count;
     int delay;
